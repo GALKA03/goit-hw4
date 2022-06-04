@@ -168,6 +168,10 @@ font-weight: 500;
     letter-spacing: 0.02em;
     
 }
+.conteiner-telphon{
+    display: flex;
+margin-left: auto;
+}
 .site-nav-mail {
     color: var(--primery-text-color);
 }
@@ -176,19 +180,20 @@ font-weight: 500;
 .site-nav-mail:focus {
     color: var(--color-logo);
 }
-.client-svg-icon-konv:hover,
-.client-svg-icon-konv:focus{
-    background-color: var(--color-logo);
-}
+
 .client-svg-icon-konv{
 width: 16px;
 height: 12px;
 margin-right: 10px;
+
+cursor: pointer;
 }
 .client-svg-icon-smar{
     width: 12px;
     height: 16px;
     margin-right: 10px;
+    
+    cursor: pointer;
 }
 .site-nav-tel {
     color: var(--primery-text-color);
@@ -256,7 +261,6 @@ margin-right: 10px;
 .section-idea-ul {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 94px;
     flex-basis: calc((100%-120px)/4)
     
 }
@@ -291,28 +295,7 @@ display: inline-block;
     margin: 25px 102px;
     
 }
-/*.section-idea-details::before{
-    display: block;
-    content: '';
-    height: 120px;
-    margin-bottom: 30px;
-        background-size: none;
-        background-position: center;
-        background-repeat: no-repeat;
-}
-.section-idea-details.icon-antena::before{
- background-image: url(/images/icon/antennaopt1.svg);   
-}
-.section-idea-details.icon-clock::before{
-background-image:url(/images/icon/clock\ .svg);
-}
-.section-idea-details.icon-diagrama::before{
-background-image: url(/images/icon/diagram.svg);
-}
-.section-idea-details.icon-kosmonavt::before{
-background-image: url(/images/icon/astronaut.svg);
-}
-*/
+
 .section-title {  
     margin-bottom: 10px;
     font-weight: 700;
@@ -368,6 +351,7 @@ background-image: url(/images/icon/astronaut.svg);
     align-items: center;
     flex-wrap: wrap;
     flex-basis: calc((100%-120px)/4);
+    background-color: var(--bacground-font-waight);
 }
 
 .section-team-card:not(:nth-child(4n)) {
@@ -411,11 +395,11 @@ padding-right: 30px;
 .client-soc-linc:hover,
 .client-soc-linc:focus
  {
-background-color:var(--color-logo) 
+background-color:var(--color-logo) ;
+
 }
 .team-social-list{
     display:block;
-fill: #232426;
 }
 .team-social-list:not(:last-child){
 margin-right: 10px;    
@@ -452,21 +436,17 @@ align-items: center;
 .link-svg:hover,
 .link-svg:focus{
 fill: var(--color-logo);
+stroke:var(--bacground-font-waight);
 }
 .link-svg{
     fill: #AFB1B8;
-    stroke:var(--bacground-font-waight)
+    color: #ffffff;   
 }
-link-svg
-/*
-.socil-clients-link:hover,
-.socil-clients-link:focus{
-    fill: var(--color-logo);
-}*/
+
 /*=================================section team===========================================*/
 /*=========================================footer================================================*/
 .footer {
-    display: block;
+    display: flex;
     padding: 60px 0;
     background-color: var(--color-bacgraund-hovfut);
     color: var(--bacground-font-waight) rpga;
@@ -480,10 +460,7 @@ link-svg
     letter-spacing: 0.03em;
     color: var(--bacground-font-waight);
 }
-.pad{
 
-padding-right: 70px;
-}
 .footer-address {
     margin-top: 20px;
     font-style: normal;
@@ -516,7 +493,12 @@ padding-right: 70px;
 }
 .conteinerdop{
     display:flex;
+    justify-content: end;
 background-color: var(--color-bacgraund-hovfut);
+}
+
+.ccc{
+    margin-left: 70px;
 }
 .hoveback{
     padding: 60px 0;
@@ -535,10 +517,6 @@ background-color: var(--color-bacgraund-hovfut);
             border-radius: 50%;
 }
 
-.use-lincfut:hover,
-.use-lincfut:focus{
-
-}
 .use-lincfut{
     display:flex;
     width: 20px;
@@ -601,11 +579,15 @@ background-color: var(--color-logo);
 }
 
 .conteiner-card {
+
     padding-top: 20px;
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 20px;
-    border: 1px solid rgba(238, 238, 238, 1)
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    border: 1px solid rgba(238, 238, 238, 1);
+    
 }
 
 .section-project-card:not(:nth-last-child(-n + 3)) {
@@ -619,6 +601,7 @@ background-color: var(--color-logo);
 
 .section-project-card:not(:nth-child(3n)) {
     margin-right: 30px;
+
 }
 
 .project-section-title {

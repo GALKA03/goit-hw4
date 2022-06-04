@@ -17,7 +17,7 @@
 <body>
     <!-- начальные ссылки -->
     
-<header class="header-main ">
+<header class="header-main">
     <div class="conteiner correct">
         <a href="" class="logo link"><span class="web">Web</span>Studio</a>
         <nav class="title-nav">
@@ -27,10 +27,21 @@
                 <li class="item-li"><a href="" class="title-nav-text  link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="site-nav list">
-            <li class="item-li"><a href="mailto:info@devstudio.com" class="site-nav-mail link ">info@devstudio.com</a>
-            </li>
-            <li class="item-li"><a href="tel:+380961111111" class="site-nav-tel link">+38 096 111 11 11</a></li>
+        <div class="conteiner-telphon">
+            <ul class="site-nav list">
+                <svg class="client-svg-icon-konv">
+                    <use class="link-svg" href="/images/sprite.svg#icon-konve"></use>
+                </svg>
+                <li class="item-li"><a href="mailto:info@devstudio.com" class="site-nav-mail link ">info@devstudio.com
+                    </a></li>
+
+                <svg class="client-svg-icon-smar">
+                    <use class="link-svg" href="/images/sprite.svg#icon-smartphonopt"></use>
+                </svg>
+                <li class="item-li"><a href="tel:+380961111111" class="site-nav-tel link">+38 096 111 11 11
+
+                    </a></li>
+        </div>
         </ul>
     </div>
 </header>
@@ -102,8 +113,6 @@
     <p class="project-section-text">Дизайн</p>
 </div>
 </li>
-
-
     <li class="section-project-card" ><img  class="img" src="./images/birka.jpg" alt="бирка" width="370" height="290">
     <div class="conteiner-card">
         <h2 class="project-section-title">Проект LAB</h2>
@@ -121,20 +130,59 @@
 </section>
 </main>
 <!-- Подвал страницы -->
-<footer class="footer">
-    <div class="conteiner">
-        <a href="WebStudio" lang="en" class="footer-webstudio link"><span class="footer-web">Web</span>Studio</a>
-        <address class="footer-address">
-            <ul class="section-footer list">
-                <li class="footer-li"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank"
-                        rel="noopener nofollow noreferrer" class="futer-maps link">
-                        г.Киев, пр-т Леси Украинки,26</a> </li>
-                <li class="footer-li"><a href=" mailto:info@devstudio.com"
-                        class="footer-mail link">info@devstudio.com</a></li>
-                <li class="footer-li"><a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a></li>
-            </ul>
+<footer class="footer hoveback">
+    <div class="conteiner conteinerdop">
+        <div class="conteiner pad ">
+            <a href="WebStudio" lang="en" class="footer-webstudio link"><span class="footer-web">Web</span>Studio</a>
+            <address class="footer-address">
+                <ul class="section-footer list ">
+                    <li class="footer-li"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank"
+                            rel="noopener nofollow noreferrer" class="futer-maps link">
+                            г.Киев, пр-т Леси Украинки,26</a> </li>
+                    <li class="footer-li"><a href=" mailto:info@devstudio.com"
+                            class="footer-mail link">info@devstudio.com</a></li>
+                    <li class="footer-li"><a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a></li>
+                </ul>
+        </div>
         </address>
+        <div class="conteiner">
+            <h3 class="section-title futer-text-join">присоединяйтесь</h3>
+            <ul class="futer-social  list">
+                <li class="futer-soc-list">
+                    <a class="futer-link" href="">
+                        <svg href="" class="futer-icon" widht="20" height="20">
+                            <use class="use-lincfut link-svg" href="/images/sprite.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="futer-soc-list">
+                    <a href="" class="futer-link ">
+                        <svg class="futer-icon" widht="20" height="20">
+                            <use class="use-lincfut link-svg" href="/images/sprite.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="futer-soc-list">
+                    <a href="" class="futer-link">
+                        <svg class="futer-icon" widht="20" height="20">
+                            <use class="use-lincfut link-svg" href="/images/sprite.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="futer-soc-list">
+                    <a href="" class="futer-link">
+                        <svg class="futer-icon" widht="20" height="20">
+                            <use class="use-lincfut link-svg" href="/images/sprite.svg#icon-linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</footer>     
+</footer>
  </body>       
         </html>
