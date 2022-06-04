@@ -30,14 +30,18 @@
             </ul>
         </nav>
         <ul class="site-nav list">
-            <li class="item-li"><a href="mailto:info@devstudio.com" class="site-nav-mail link ">info@devstudio.com</a></li>
+            <li class="item-li"><a href="mailto:info@devstudio.com" class="site-nav-mail link ">info@devstudio.com
+                <svg class="client-svg-icon">
+                    <use class="link-svg" href="/images/sprite.svg#icon-smartphonopt" width="20" height="20"></use>
+                </svg>
+            </a></li>
             <li class="item-li"><a href="tel:+380961111111" class="site-nav-tel link">+38 096 111 11 11</a></li>
         </ul>
    </div>
     </header> 
     <!-- hero section 1 -->
     <main>
-        <section class="section hero">
+        <section class="section hero hero-bacgraund">
             <div class="conteiner">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button">Заказать услугу</button>
@@ -48,21 +52,47 @@
             <div class="conteiner">
             <h2  class="section-title visually-hidden">черты характера</h2>
             <ul class="section-idea-ul list">
-                <li class="section-idea-details">
+        
+                <li class="section-idea-details icon-antena">
+    
                     <h3 class="section-title">Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                   <div class="svg-idei-conteiner">
+                    <svg class="icon-idea-svg" width="70" height="70">
+                       <use href="/images/sprite.svg#icon-antennaopt">
+                       </use> 
+                    </svg>
+                    </div>
                 </li>
-                <li class="section-idea-details">
+                <li class="section-idea-details icon-clock">
                     <h3 class="section-title">Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <div class="svg-idei-conteiner">
+                    <svg class="icon-idea-svg" width="70" height="70">
+                        <use href="/images/sprite.svg#icon-clock">
+                        </use>
+                    </svg>
+                </div>
                 </li>
-                <li class="section-idea-details">
+                <li class="section-idea-details icon-diagrama">
                     <h3 class="section-title">Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <div class="svg-idei-conteiner">
+                    <svg class="icon-idea-svg">
+                        <use href="/images/sprite.svg#icon-diagram" width="70" height="70">
+                        </use>
+                    </svg>
+                </div>
                 </li>
-                <li class="section-idea-details">
+                <li class="section-idea-details icon-kosmonavt">
                     <h3 class="section-title">Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <div class="svg-idei-conteiner">
+                    <svg class="icon-idea-svg" width="70" height="70">
+                        <use href="/images/sprite.svg#icon-astronaut">
+                        </use>
+                    </svg>
+                </div>
                 </li>
             </ul>
         </div>
@@ -86,16 +116,47 @@
             <h2 class="section-title-main">Наша команда</h2>
             <ul class="section-team-ul list">
                 <li class="section-team-card"><img class="img" src="./images/img.jpg" alt="мужчина в очках с бородой очень доволен" width="270" height="260">
-                   <div class="cont-team-text"> 
                        <h3 class="section-title-team">Игорь Демьяненко</h3>
                     <p lang="en" class="section-team-prof">Product Designer</p>
-                </div>
+                    <ul class="team-ul-list list">
+                        <li class="team-social-list list">
+                            <a href="" class="client-soc-linc">
+                            <svg class="client-svg-icon">
+                                <use class="link-svg" href="/images/sprite.svg#icon-instagram" width="20" height="20"></use>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="team-social-list">
+                            <a href="" class="client-soc-linc">
+                                <svg class="client-svg-icon">
+                                    <use href="/images/sprite.svg#icon-twitter" width="20" height="20"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-social-list">
+                            <a href="" class="client-soc-linc">
+                                <svg class="client-svg-icon">
+                                    <use href="/images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-social-list">
+                            <a href="" class="client-soc-linc">
+                                <svg class="client-svg-icon">
+                                    <use href="/images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
             </li>
                 <li class="section-team-card"><img class="img" src="./images/img(1).jpg" alt="женщина блондинка в очках улыбается" width="270" height="260">
                     <div class="cont-team-text">
                         <h3 class="section-title-team">Ольга Репина</h3>
                    <p lang="en" class="section-team-prof"> Frontend Developer</p>
-                 </div>
+                 
+                
+                
+                </div>
                 </li>
                 <li class="section-team-card"><img class="img" src="./images/img(2).jpg" alt="русоволосый мужчина без бороды улыбается" width="270"
                         height="260">
@@ -114,21 +175,112 @@
             </ul>
         </div>
         </section>
+        <section class="section">
+            <div class="conteiner">
+            <h2 class="section-title-main">Постоянные клиенты</h2>
+        <ul class="client-list list ">
+<li class="client-li">
+<a href=""class="socil-clients-link">
+<svg class="svg-social-clients">
+    <use href="/images/sprite.svg#icon-Logofirst" widht="106" height="60">
+    </use>
+</svg></a>
+</li>
+<li class="client-li">
+<a href=""class="socil-clients-link">
+<svg class="svg-social-clients">
+    <use href="/images/sprite.svg#icon-Logosecond" widht="106" height="60">
+    </use>
+</svg></a>
+</li>
+<li class="client-li"> 
+<a href=""class="socil-clients-link">
+    <svg class="svg-social-clients">
+    <use href="/images/sprite.svg#icon-Logotherd" widht="106" height="60">
+    </use>
+</svg>
+</a>
+</li>
+<li class="client-li">
+<a href="" class="socil-clients-link">
+<svg class="svg-social-clients">
+    <use class="client-icon coloricon" href="/images/sprite.svg#icon-Logofor" widht="106" height="60">
+    </use>
+</svg>
+</a>
+</li>
+<li class="client-li">
+<a href=""class="socil-clients-link">
+<svg class="svg-social-clients">
+    <use class="client-icon" href="/images/sprite.svg#icon-Logofive" widht="106" height="60">
+    </use>
+</svg>
+</a>
+</li>
+<li class="client-li">
+<a href="" class="socil-clients-link">
+<svg class="svg-social-clients">
+    <use class="client-icon" href="/images/sprite.svg#icon-Logosix" widht="106" height="60">
+    </use>
+</svg></a>
+</li>
+            </ul>
+</div>
+        </section>
     </main>
     <!-- Подвал страницы -->
-    <footer class="footer">
+    <footer class="footer ">
+       <div class="conteiner conteinerdop">
         <div class="conteiner"    >
         <a href="WebStudio" lang="en" class="footer-webstudio link"><span class="footer-web">Web</span>Studio</a>
         <address class="footer-address">
-            <ul class="section-footer list">
+            <ul class="section-footer list ">
                 <li class="footer-li"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank" rel="noopener nofollow noreferrer"
                         class="futer-maps link">
                         г.Киев, пр-т Леси Украинки,26</a> </li>
                 <li class="footer-li"><a href=" mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a></li>
                 <li class="footer-li"><a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a></li>
             </ul>
+        </div>
         </address>
-    </div> 
+    <div class="conteiner marg ">
+        <h3 class="section-title futer-text-join">присоединяйтесь</h3>
+<ul class="futer-social  list">
+    <li class="futer-soc-list">
+        <a class="futer-link" href="">
+<svg  href=""class="futer-icon">
+<use class="use-lincfut"  href="/images/sprite.svg#icon-instagram" widht="20" height="20">
+</use>
+</svg>
+        </a>
+    </li>
+    <li class="futer-soc-list">
+        <a  href=""class="futer-link">
+            <svg class="futer-icon">
+                <use href="/images/sprite.svg#icon-twitter" widht="20" height="20">
+                </use>
+            </svg>
+        </a>
+    </li>
+    <li class="futer-soc-list">
+        <a  href=""class="futer-link">
+            <svg class="futer-icon" href="">
+                <use href="/images/sprite.svg#icon-facebook" widht="20" height="20">
+                </use>
+            </svg>
+        </a>
+    </li>
+    <li class="futer-soc-list">
+        <a  href=""class="futer-link">
+            <svg class="futer-icon" href="">
+                <use href="/images/sprite.svg#icon-linkedin" widht="20" height="20">
+                </use>
+            </svg>
+        </a>
+    </li>
+</ul>
+</div>
+</div>
     </footer>
 </body>
 </html>

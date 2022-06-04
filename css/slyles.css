@@ -72,12 +72,14 @@ button {
 
 .correct {
     display: flex;
-    align-items: baseline;
+    align-items:center;
     padding-top: 32px;
     padding-bottom: 32px;
+
+ 
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -103,7 +105,7 @@ button {
 
 /*title heder*/
 .header-main {
-    border-bottom: 1px rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
     background-color: var(--bacground-font-waight);
 }
 
@@ -123,17 +125,11 @@ button {
 
 /*навигация хэдэр*/
 
-.title-nav {
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
 .title-nav-list {
     display: flex;
     align-items: baseline;
+
+    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -144,12 +140,16 @@ button {
     margin-right: 50px;
 }
 
+.item-li{
 
+}
 .title-nav-text {
     display: block;
+    color: var(--title-text-color);
+font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .title-nav-text:hover,
@@ -159,22 +159,32 @@ button {
 
 /*site nav */
 .site-nav {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     margin-left: auto;
+   font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    
 }
 
 .site-nav-mail {
     color: var(--primery-text-color);
 }
+.site-nav::before{
+    display: inline-block;
+content:'';
+width: 16px;
 
+}
 .site-nav-mail:hover,
 .site-nav-mail:focus {
     color: var(--color-logo);
 }
+.link-svg::before{
 
+}
 .site-nav-tel {
 
     color: var(--primery-text-color);
@@ -192,14 +202,19 @@ button {
     background-color: var(--color-bacgraund-hovfut);
     color: var(--bacground-font-waight);
 
-    background-image: linear-gradient(rgb(48, 49, 59, 0.4), rgb(48, 49, 59, 0.4)),
-        url('/images/bacgrounfon.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    background-origin: border-box;
+    
 }
-
+.hero-bacgraund{
+  max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto; 
+    
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/optimizfon.jpg');   
+    border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .hero-title {
     margin-bottom: 40px;
     font-weight: 900;
@@ -237,7 +252,9 @@ button {
 .section-idea-ul {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 94px;
     flex-basis: calc((100%-120px)/4)
+    
 }
 
 .section-idea-details {
@@ -246,12 +263,53 @@ button {
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
 }
-
+    /*display: block;
+        content: '';
+        height: 120px;
+        margin-bottom: 30px;
+        background: #F5F4FA;
+        border-radius: 4px;
+}*/
+.svg-idei-conteiner{
+    
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-top: 30px;
+  
+}
 .section-idea-details:not(:last-child) {
     margin-right: 30px;
 }
-
-.section-title {
+.icon-idea-svg{
+display: inline-block;
+    margin: 25px 102px;
+    
+}
+/*.section-idea-details::before{
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+        background-size: none;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.section-idea-details.icon-antena::before{
+ background-image: url(/images/icon/antennaopt1.svg);   
+}
+.section-idea-details.icon-clock::before{
+background-image:url(/images/icon/clock\ .svg);
+}
+.section-idea-details.icon-diagrama::before{
+background-image: url(/images/icon/diagram.svg);
+}
+.section-idea-details.icon-kosmonavt::before{
+background-image: url(/images/icon/astronaut.svg);
+}
+*/
+.section-title {  
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -339,7 +397,69 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.team-ul-list{
+    display: flex;
+    
+}
+.team-social-list:hover,
+.team-social-list:focus
+ {
+background-color:var(--color-logo) 
+}
+.team-social-list{
+    display:block;
+fill: #232426;
+}
+.client-svg-icon{
+    
+}
+.client-soc-linc{
+   
+}
+.client-soc-linc{
+display: flex;
+border-radius:50%; 
+  width: 44px;
+  height: 44px;
 
+  
+
+}
+
+/*=================client section==================================*/
+.client-list{
+  display:flex;
+  align-items: center;
+}
+.client-li{   
+     content: "";
+ width:170px ;
+ height:92px ;
+ 
+ border: 1px solid rgba(175, 177, 184, 1);
+}
+.client-li:not(:last-child){
+ margin-right: 30px;   
+}
+
+.client-icon:hover,
+.client-icon:focus{
+fill:var(--color-logo);
+}
+
+.svg-social-clients{
+    width: 106px;
+    height: 60px;
+    margin: 16px 32px;
+}
+.coloricon{
+    fill: #AFB1B8;
+}
+/*
+.socil-clients-link:hover,
+.socil-clients-link:focus{
+    fill: var(--color-logo);
+}*/
 /*=================================section team===========================================*/
 /*=========================================footer================================================*/
 .footer {
@@ -389,6 +509,48 @@ button {
 
     color: var(--footer-mail-telefon);
 }
+.futer-social{
+    display: flex;
+}
+
+.conteinerdop{
+    display:flex;
+
+}
+.conteinerdop::before{
+
+}
+.futer-social{
+    display: flex;
+    margin-left: auto;
+}
+.marg{
+    display: inline-block;
+   width: 231px;
+   height: 81px;
+}
+.futer-soc-list{
+margin-right: 0;
+}
+.futer-icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255,0.1);
+}
+.futer-icon:hover,
+.futer-icon:focus
+{
+background-color: var(--color-logo);
+}
+.futer-text-join{
+    margin-bottom:20px;
+    color: #ffffff;
+}
 
 /*=========================================footer================================================*/
 /*============================PORTFOLIO=============================================*/
@@ -398,8 +560,7 @@ button {
 .button-menu {
     display: flex;
     justify-content: center;
-    min-width: 130px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 /*button portfolio*/
