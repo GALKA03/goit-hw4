@@ -129,7 +129,6 @@ img {
     display: flex;
     align-items: baseline;
 
-    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -137,10 +136,11 @@ img {
 }
 
 .item-li:not(:last-child) {
-    margin-right: 50px;
-}
-
-.item-li{
+    content: "";
+    margin-right: 50px;}
+.client-svg-icon{
+    width: 16px;
+    height: 12px;
 
 }
 .title-nav-text {
@@ -159,7 +159,7 @@ font-weight: 500;
 
 /*site nav */
 .site-nav {
-    display: inline-flex;
+    display:flex;
     align-items: center;
     margin-left: auto;
    font-weight: 500;
@@ -168,25 +168,29 @@ font-weight: 500;
     letter-spacing: 0.02em;
     
 }
-
 .site-nav-mail {
     color: var(--primery-text-color);
 }
-.site-nav::before{
-    display: inline-block;
-content:'';
-width: 16px;
 
-}
 .site-nav-mail:hover,
 .site-nav-mail:focus {
     color: var(--color-logo);
 }
-.link-svg::before{
-
+.client-svg-icon-konv:hover,
+.client-svg-icon-konv:focus{
+    background-color: var(--color-logo);
+}
+.client-svg-icon-konv{
+width: 16px;
+height: 12px;
+margin-right: 10px;
+}
+.client-svg-icon-smar{
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
 }
 .site-nav-tel {
-
     color: var(--primery-text-color);
 }
 
@@ -390,6 +394,7 @@ background-image: url(/images/icon/astronaut.svg);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
+    margin-bottom: 16px;
 }
 
 .cont-team-text {
@@ -398,11 +403,13 @@ background-image: url(/images/icon/astronaut.svg);
     border-radius: 0px 0px 4px 4px;
 }
 .team-ul-list{
-    display: flex;
-    
+    display: flex;  
+padding-left: 32px;
+padding-right: 30px;
 }
-.team-social-list:hover,
-.team-social-list:focus
+
+.client-soc-linc:hover,
+.client-soc-linc:focus
  {
 background-color:var(--color-logo) 
 }
@@ -410,51 +417,47 @@ background-color:var(--color-logo)
     display:block;
 fill: #232426;
 }
+.team-social-list:not(:last-child){
+margin-right: 10px;    
+}
 .client-svg-icon{
-    
+   width: 20px; 
+   height: 20px; 
 }
+
 .client-soc-linc{
-   
-}
-.client-soc-linc{
-display: flex;
-border-radius:50%; 
+ display:flex;  
+  justify-content: center;
+align-items: center;
   width: 44px;
   height: 44px;
-
-  
-
-}
+ border-radius:50%;} 
 
 /*=================client section==================================*/
 .client-list{
   display:flex;
-  align-items: center;
-}
-.client-li{   
-     content: "";
- width:170px ;
- height:92px ;
- 
- border: 1px solid rgba(175, 177, 184, 1);
+  align-items:center;
 }
 .client-li:not(:last-child){
  margin-right: 30px;   
 }
-
-.client-icon:hover,
-.client-icon:focus{
-fill:var(--color-logo);
+.socil-clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       width: 170px;
+    height: 92px; 
+    border: 1px solid rgba(175, 177, 184, 1);
 }
-
-.svg-social-clients{
-    width: 106px;
-    height: 60px;
-    margin: 16px 32px;
+.link-svg:hover,
+.link-svg:focus{
+fill: var(--color-logo);
 }
-.coloricon{
+.link-svg{
     fill: #AFB1B8;
+    stroke:var(--bacground-font-waight)
 }
+link-svg
 /*
 .socil-clients-link:hover,
 .socil-clients-link:focus{
@@ -469,7 +472,6 @@ fill:var(--color-logo);
     color: var(--bacground-font-waight) rpga;
     cursor: pointer;
 }
-
 .footer-webstudio {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -478,7 +480,10 @@ fill:var(--color-logo);
     letter-spacing: 0.03em;
     color: var(--bacground-font-waight);
 }
+.pad{
 
+padding-right: 70px;
+}
 .footer-address {
     margin-top: 20px;
     font-style: normal;
@@ -509,43 +514,42 @@ fill:var(--color-logo);
 
     color: var(--footer-mail-telefon);
 }
-.futer-social{
-    display: flex;
-}
-
 .conteinerdop{
     display:flex;
-
+background-color: var(--color-bacgraund-hovfut);
 }
-.conteinerdop::before{
-
+.hoveback{
+    padding: 60px 0;
+    background-color: var(--color-bacgraund-hovfut);
 }
 .futer-social{
     display: flex;
     margin-left: auto;
 }
-.marg{
-    display: inline-block;
-   width: 231px;
-   height: 81px;
-}
-.futer-soc-list{
-margin-right: 0;
-}
-.futer-icon{
+.futer-link{
     display:flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: fill;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255,0.1);
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+            height: 44px;
+            border-radius: 50%;
 }
-.futer-icon:hover,
-.futer-icon:focus
+
+.use-lincfut:hover,
+.use-lincfut:focus{
+
+}
+.use-lincfut{
+    display:flex;
+    width: 20px;
+    height: 20px;
+    fill:var(--bacground-font-waight);
+}
+.futer-link:hover,
+.futer-link:focus
 {
 background-color: var(--color-logo);
+
 }
 .futer-text-join{
     margin-bottom:20px;
