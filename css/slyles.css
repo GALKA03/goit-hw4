@@ -493,11 +493,13 @@ stroke:var(--bacground-font-waight);
 }
 .conteinerdop{
     display:flex;
-    justify-content: end;
+    justify-content: flex-start;
 background-color: var(--color-bacgraund-hovfut);
 }
 
 .ccc{
+    display: inline-block;
+    justify-content: center;
     margin-left: 70px;
 }
 .hoveback{
@@ -516,7 +518,9 @@ background-color: var(--color-bacgraund-hovfut);
             height: 44px;
             border-radius: 50%;
 }
-
+.futer-soc-list:not(:last-child){
+    margin-right: 10px;
+}
 .use-lincfut{
     display:flex;
     width: 20px;
