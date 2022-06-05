@@ -185,6 +185,7 @@ margin-left: auto;
 width: 16px;
 height: 12px;
 margin-right: 10px;
+color: rgba(117, 117, 117, 1);
 
 cursor: pointer;
 }
@@ -197,6 +198,7 @@ cursor: pointer;
 }
 .site-nav-tel {
     color: var(--primery-text-color);
+    color: rgba(117, 117, 117, 1);
 }
 
 .site-nav-tel:hover,
