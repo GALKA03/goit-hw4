@@ -395,11 +395,6 @@ padding-left: 32px;
 padding-right: 30px;
 }
 
-.client-soc-linc:hover,
-.client-soc-linc:focus
- {
-background-color:var(--color-logo) ;
-}
 
 .team-social-list:not(:last-child){
 margin-right: 10px;    
@@ -415,15 +410,15 @@ margin-right: 10px;
 align-items: center;
   width: 44px;
   height: 44px;
- border-radius:50%;} 
-.link-svg:hover,
-.link-svg:focus{
-fill: var(--bacground-font-waight);
-}
-.link-svg {
-    fill: #AFB1B8;
-    color: #ffffff;
-}
+  fill: var(--icon-color);
+ border-radius:50%;}
+ 
+ .client-soc-lin:hover,
+ .client-soc-lin:focus{
+    background-color: var(--color-logo);
+    fill: var(--bacground-font-waight);
+ }
+
 /*=================client section==================================*/
 .client-list{
   display:flex;
@@ -446,10 +441,6 @@ fill: var(--bacground-font-waight);
 border: 1px solid var(--color-logo);
 fill: var(--color-logo);
 }
-/*
-.link-svg-cl{
-fill: currentColor;
-}*/
 
 /*=================================section team===========================================*/
 /*=========================================footer================================================*/
@@ -457,8 +448,7 @@ fill: currentColor;
     display: flex;
     padding: 60px 0;
     background-color: var(--color-bacgraund-hovfut);
-    color: var(--bacground-font-waight) rpga;
-    cursor: pointer;
+    color: var(--bacground-font-waight);
 }
 .footer-webstudio {
     font-family: 'Raleway', sans-serif;
@@ -476,6 +466,7 @@ fill: currentColor;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
 .footer-web {
@@ -511,10 +502,7 @@ background-color: var(--color-bacgraund-hovfut);
     
     margin-left: 70px;
 }
-.hoveback{
-    padding: 60px 0;
-    background-color: var(--color-bacgraund-hovfut);
-}
+
 .futer-social{
     display: flex;
     margin-left: auto;
@@ -524,8 +512,10 @@ background-color: var(--color-bacgraund-hovfut);
         align-items: center;
         justify-content: center;
         width: 44px;
-            height: 44px;
-            border-radius: 50%;
+        height: 44px;
+        border-radius: 50%;
+        background-color:rgb(255, 255, 255,0.1); 
+        cursor: pointer;
 }
 .futer-soc-list:not(:last-child){
     margin-right: 10px;
@@ -544,7 +534,7 @@ background-color: var(--color-logo);
 }
 .futer-text-join{
     margin-bottom:20px;
-    color: #ffffff;
+    color:var(--bacground-font-waight)
 }
 
 /*=========================================footer================================================*/
