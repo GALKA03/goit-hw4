@@ -539,7 +539,6 @@ background-color: var(--color-logo);
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
     color: var(--title-text-color);
-    cursor: pointer;
     border: transparent;
     border-radius: 4px;
 }
